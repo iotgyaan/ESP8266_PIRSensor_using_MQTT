@@ -40,6 +40,10 @@ node-red
 
 
 -----------> Install Nodes <------------
+STEP 1 
+1. Download flows json file and import to node-red
+
+STEP 2
 
 1. debug: Displays selected message properties in the debug sidebar tab and optionally the runtime log. By default it displays msg.payload, but can be configured to display any property, the full message or the result of a JSONata expression.
 
