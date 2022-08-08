@@ -8,6 +8,7 @@ STEP 1
 1. Install Node.js
 
 STEP 2
+
 EMQX MQTT Broker
 1. Download zip from here --> https://www.emqx.com/en/downloads/broker?osType=Linux
 
@@ -25,9 +26,13 @@ unzip emqx-4.4.1-otp23.0-windows-amd64.zip
 .\bin\emqx stop
 
 STEP 3
+
 Node-RED
+
 Windows CMD:
 
 node --version && npm --version
+
 npm install -g --unsafe-perm node-red
+
 node-red
