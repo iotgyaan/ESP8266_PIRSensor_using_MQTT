@@ -5,7 +5,7 @@ const char* ssid = "YOUR_SSID";
 const char* password = "YOUR_PASSWORD";
  
 const char *MQTT_HOST = "YOUR _IP";
-const int MQTT_PORT = 21080;
+const int MQTT_PORT = 1883;
 const char *MQTT_CLIENT_ID = "ESP8266 NodeMCU"; 
 const char *MQTT_USER = "user";
 const char *MQTT_PASSWORD = "password";
