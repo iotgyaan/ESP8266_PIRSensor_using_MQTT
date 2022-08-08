@@ -41,7 +41,7 @@ node-red
 
 -----------> Install Nodes <------------
 STEP 1 
-1. Download flows json file and import to node-red
+1. Download PIR_sensor_flows.json file and import to node-red
 
 STEP 2
 
