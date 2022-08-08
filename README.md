@@ -2,9 +2,12 @@
 Led ON and OFF using PIR Sensor with MQTT using ESP8266.
 
 
-<----------------Publisher-------------->
+<--------Publisher-------------->
+
 inputPin -----> D4 -----> 2
+
 led pin ----- D6  -----> 12
 
-<----------------Subscriber------------->
+<-------Subscriber------------->
+
 board led  -----> D4 -----> 2
