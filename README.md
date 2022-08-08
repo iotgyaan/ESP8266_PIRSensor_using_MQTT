@@ -45,6 +45,4 @@ node-red
 
 2. mqtt in: Connects to a MQTT broker and subscribes to messages from the specified topic.
 
-3. node-red-contrib-ui-led : ui_led
-
-simple LED status indicator for the Node-RED Dashboard
+3. node-red-contrib-ui-led : ui_led is simple LED status indicator for the Node-RED Dashboard.
