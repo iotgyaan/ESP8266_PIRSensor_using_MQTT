@@ -2,7 +2,7 @@
 Led ON and OFF using PIR Sensor with MQTT using ESP8266.
 
 
--------> Install nodejs and node-red <--------
+-------> Install Nodejs and Node-red <--------
 
 STEP 1
 1. Install Node.js
