@@ -36,3 +36,15 @@ node --version && npm --version
 npm install -g --unsafe-perm node-red
 
 node-red
+
+
+
+-----------> Install Nodes <------------
+
+1. debug: Displays selected message properties in the debug sidebar tab and optionally the runtime log. By default it displays msg.payload, but can be configured to display any property, the full message or the result of a JSONata expression.
+
+2. mqtt in: Connects to a MQTT broker and subscribes to messages from the specified topic.
+
+3. node-red-contrib-ui-led : ui_led
+
+simple LED status indicator for the Node-RED Dashboard
