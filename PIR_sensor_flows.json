@@ -1,0 +1,173 @@
+[
+    {
+        "id": "7b8365217c4e4d6c",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "bd3bfda5151f6ef3",
+        "type": "mqtt in",
+        "z": "7b8365217c4e4d6c",
+        "name": "",
+        "topic": "esp/pir/topic",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "721a08434dc44bfe",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 140,
+        "wires": [
+            [
+                "ff357ee7286d68ca",
+                "3506dc924741bbf0"
+            ]
+        ]
+    },
+    {
+        "id": "ff357ee7286d68ca",
+        "type": "debug",
+        "z": "7b8365217c4e4d6c",
+        "name": "debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 390,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "3506dc924741bbf0",
+        "type": "ui_led",
+        "z": "7b8365217c4e4d6c",
+        "order": 0,
+        "group": "5ffd9ebb38355160",
+        "width": "5",
+        "height": "4",
+        "label": "",
+        "labelPlacement": "right",
+        "labelAlignment": "right",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "ON",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "OFF",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 410,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "a4e1341136357495",
+        "type": "mqtt out",
+        "z": "7b8365217c4e4d6c",
+        "name": "",
+        "topic": "esp/pir/topic",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "721a08434dc44bfe",
+        "x": 370,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "5712f2d21f41071a",
+        "type": "inject",
+        "z": "7b8365217c4e4d6c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "OFF",
+        "payloadType": "str",
+        "x": 110,
+        "y": 320,
+        "wires": [
+            [
+                "a4e1341136357495"
+            ]
+        ]
+    },
+    {
+        "id": "721a08434dc44bfe",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": "",
+        "credentials": {}
+    },
+    {
+        "id": "5ffd9ebb38355160",
+        "type": "ui_group",
+        "name": "",
+        "tab": "64a3ef4b4d2de760",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "64a3ef4b4d2de760",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
