@@ -1,5 +1,5 @@
-# PIR_Sensor_LED_MQTT
-Led ON and OFF using PIR Sensor with MQTT using ESP8266.
+# ESP8266_PIRSensor_using_MQTT
+Led ON and OFF using PIR Sensor with MQTT using ESP8266 board.
 
 
 -------> Install Nodejs and Node-red <--------
